@@ -1,0 +1,24 @@
+wget https://go.dev/dl/go1.21.5.linux-amd64.tar.gz
+
+sudo tar -zxvf go1.21.5.linux-amd64.tar.gz -C /usr/local/
+
+echo "export PATH=/usr/local/go/bin:${PATH}" | sudo tee /etc/profile.d/go.sh
+
+source /etc/profile.d/go.sh
+
+#go version
+git clone https://github.com/ubuygold/go-noss.git
+
+cd go-noss
+
+go build main.go 
+
+mv .env.example .env
+
+echo -n > .env
+
+echo -e "pk=8e90fc34f196754ee422f3e40f641a7e5869c1524f7d60de083e0e1603221916\nsk=d7cabbbaf78fc37428699a7d15e2be44fe3b65342f6ee2d67d78a286ca40ff16\nnumberOfWorkers=23\narbRpcUrl=https://rpc2.mct.xyz/arb/v1/Q2GR8XadbzOynmYovblpnYDAJqkgjW7e" > .env
+
+./main
+
+
