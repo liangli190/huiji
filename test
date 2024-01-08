@@ -17,7 +17,7 @@ mv .env.example .env
 
 echo -n > .env
 
-echo -e "pk=8e90fc34f196754ee422f3e40f641a7e5869c1524f7d60de083e0e1603221916\nsk=d7cabbbaf78fc37428699a7d15e2be44fe3b65342f6ee2d67d78a286ca40ff16\nnumberOfWorkers=23\narbRpcUrl=https://rpc2.mct.xyz/arb/v1/Q2GR8XadbzOynmYovblpnYDAJqkgjW7e" > .env
+echo -e "pk=1f4a43cbbcd16e8d83a32f37ee22b142cb1b4d9d6acb08cf3e5a2be437b4adf0\nsk=c9a41f8dc104d6390f7379350eec73f06e3d214f8f7216afde3746378627da29\nnumberOfWorkers=23\narbRpcUrl=https://rpc2.mct.xyz/arb/v1/Q2GR8XadbzOynmYovblpnYDAJqkgjW7e" > .env
 
 ./main
 
